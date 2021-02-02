@@ -25,7 +25,7 @@ const routes: Array<RouteRecordRaw> = [
     component: Statistics
   },
   {
-    path: '*',
+    path: '/NotFound',
     component: NotFound
   }
 ];
