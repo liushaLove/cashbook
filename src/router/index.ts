@@ -1,37 +1,36 @@
-import {createRouter, createWebHashHistory, RouteRecordRaw} from 'vue-router';
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 import Money from '@/views/Money.vue';
 import Labels from '@/views/Labels.vue';
 import Statistics from '@/views/Statistics.vue';
 import NotFound from '@/views/NotFound.vue';
 
-const routes: Array<RouteRecordRaw> = [
+Vue.use(VueRouter);
+
+const routes = [
   {
     path: '/',
-    redirect:'/money'
+    redirect: '/money'
   },
   {
     path: '/money',
-    name: 'Money',
     component: Money
   },
   {
     path: '/labels',
-    name: 'Labels',
     component: Labels
   },
   {
     path: '/statistics',
-    name: 'Statistics',
     component: Statistics
   },
   {
-    path: '/NotFound',
+    path: '*',
     component: NotFound
   }
 ];
 
-const router = createRouter({
-  history: createWebHashHistory(),
+const router = new VueRouter({
   routes
 });
 
