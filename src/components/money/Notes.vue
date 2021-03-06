@@ -2,14 +2,26 @@
   <div>
     <label class="notes">
       <span class="name">备注</span>
-      <input type="text" placeholder="在这里输入备注">
+      <input type="text" :value="value" @input="onInput" placeholder="在这里输入备注">
     </label>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
-  name: "Notes"
+  name: "Notes",
+  data(){
+    return {
+      value:''
+    }
+  },
+  methods:{
+    onInput(e){
+      debugger;
+      const input = e.target;
+      this.value = input.value;
+    }
+  }
 }
 </script>
 
