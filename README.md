@@ -1,29 +1,16 @@
-# cashbook
+# 日常生活开销记录
 
-## Project setup
+## 工程创建
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### 启动服务
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### 打包
 ```
 yarn build
 ```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
