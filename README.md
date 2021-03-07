@@ -14,3 +14,7 @@ yarn serve
 ```
 yarn build
 ```
+### 部署
+```
+sh deploy.sh
+```
