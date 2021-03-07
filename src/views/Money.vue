@@ -23,14 +23,13 @@ import Button from '@/components/Button.vue';
 
 
 @Component({
-  components:{Button, Tags,Types,NumberPad,FormItem},
-  computed:{
-    recordList(){
-      return this.$store.state.recordList;
-    }
-  }
+  components:{Button, Tags,Types,NumberPad,FormItem}
 })
 export default class Money extends Vue {
+
+  get recordList() {
+    return this.$store.state.recordList;
+  }
 
   record: RecordItem = {
     tags: [], notes: '', type: '-', amount: 0
