@@ -9,8 +9,6 @@
       />
     </div>
     <Tags/>
-    {{count}}
-    <button @click="add">1</button>
   </Layout>
 </template>
 
